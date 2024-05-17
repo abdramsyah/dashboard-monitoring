@@ -1,0 +1,38 @@
+package roles_modules
+
+type Modules string
+
+const (
+	UserManagement         Modules = "USER_MANAGEMENT"
+	ClientManagement       Modules = "CLIENT_MANAGEMENT"
+	GradeManagement        Modules = "GRADE_MANAGEMENT"
+	CoordinatorManagement  Modules = "COORDINATOR_MANAGEMENT"
+	PartnershipManagement  Modules = "PARTNERSHIP_MANAGEMENT"
+	LoanManagement         Modules = "LOAN_MANAGEMENT"
+	SupplyPowerManagement  Modules = "SUPPLY_POWER_MANAGEMENT"
+	CoordinatorPerformance Modules = "COORDINATOR_PERFORMANCE"
+	UniqueCode             Modules = "UNIQUE_CODE"
+	TaxAndFee              Modules = "TAX_AND_FEE"
+	PourOut                Modules = "POUR_OUT"
+	Grading                Modules = "GRADING"
+	Weigh                  Modules = "WEIGH"
+	Grouping               Modules = "GROUPING"
+	Shipment               Modules = "SHIPMENT"
+	QueueManagement        Modules = "QUEUE_MANAGEMENT"
+	QueueHistory           Modules = "QUEUE_HISTORY"
+	BarcodeSellingSystem   Modules = "BARCODE_SELLING_SYSTEM"
+	PaymentManagement      Modules = "PAYMENT_MANAGEMENT"
+	StockSummary           Modules = "STOCK_SUMMARY"
+	GoodsTable             Modules = "GOODS_TABLE"
+	GroupingManagement     Modules = "GROUPING_MANAGEMENT"
+	ShipmentManagement     Modules = "SHIPMENT_MANAGEMENT"
+	InvoiceApproval        Modules = "INVOICE_APPROVAL"
+	SellBuyDifferences     Modules = "SELL_BUY_DIFFERENCES"
+	Remuneration           Modules = "REMUNERATION"
+	InformationChecker     Modules = "INFORMATION_CHECKER"
+	EmployeeManagement     Modules = "EMPLOYEE_MANAGEMENT"
+	Presence               Modules = "PRESENCE"
+	QueueRequest           Modules = "QUEUE_REQUEST"
+	CoordinatorInvoice     Modules = "COORDINATOR_INVOICE"
+	PendingValidation      Modules = "PENDING_VALIDATION"
+)

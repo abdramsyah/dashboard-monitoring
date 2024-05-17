@@ -1,0 +1,229 @@
+.modalDelete {
+  .ant-modal-content {
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+    border-radius: 8px;
+
+    h4 {
+      font-family: 'Helvetica';;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      color: #0b2250;
+    }
+
+    p {
+      color: #6d7a96;
+    }
+
+    .action {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      .cancelButton {
+        width: 180px;
+        border-radius: 8px;
+        height: 44px;
+        background: none;
+        border: 1px solid #6d7a96;
+        color: #6d7a96;
+      }
+
+      .deleteButton {
+        width: 180px;
+        border-radius: 8px;
+        height: 44px;
+        border: 1px solid transparent;
+      }
+    }
+
+    .alertIcon {
+      z-index: 999;
+      background: #c34331;
+      border-radius: 30px;
+      padding: 5px;
+      color: #c34331;
+      font-size: 38px;
+      margin: 20px 0;
+    }
+  }
+
+  .antModalFooter {
+    border: none;
+  }
+}
+
+.modalEdit {
+  .ant-modal-content {
+    background: #ffffff;
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+    border-radius: 8px;
+
+    h4 {
+      font-family: 'Helvetica';;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      color: #0b2250;
+    }
+
+    p {
+      color: #6d7a96;
+    }
+
+    .formInput {
+      .row {
+        display: flex;
+        gap: 25px;
+        
+        .fieldBox {
+          width: 50%;
+
+          .editableRow {
+            display: flex;
+            gap: 25px;
+            width: 80%;
+            align-items: center;
+          }
+        }
+      }
+      .fieldBox {
+        .form {
+          margin: 10px 0;
+          height: 41px;
+        }
+      }
+    }
+
+    .submitButton {
+      width: 100%;
+      height: 44px;
+      margin: 30px 0 10px 0;
+      border-radius: 8px;
+      font-family: 'Helvetica';;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+
+      letter-spacing: 0.01em;
+
+      color: #ffffff;
+    }
+  }
+
+  .antModalFooter {
+    border: none;
+  }
+}
+
+.antModalMask {
+  background-color: #0000001f !important;
+}
+
+.modal-confirmation {
+  .ant-modal-content {
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+    border-radius: 8px;
+
+    h4 {
+      font-family: 'Helvetica';;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      color: #0b2250;
+    }
+
+    p {
+      color: #6d7a96;
+    }
+
+    .action {
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      .modal-confirmation-base-button {
+        width: 180px;
+        border-radius: 8px;
+        height: 44px;
+      }
+
+      .cancel-button {
+        background: none;
+        border: 1px solid #c34331;
+        color: #c34331;
+      }
+
+      .confirm-button {
+        border: 1px solid transparent;
+      }
+
+      .is-cancel-focused-cancel {
+        background: #c34331;
+        color: #ffffff;
+        border: 1px solid transparent;
+      }
+
+      .is-cancel-focused-confirm {
+        background: none;
+        border: 1px solid #6fa8f8;
+        color: #6fa8f8;
+      }
+    }
+
+    .alert-icon {
+      z-index: 999;
+      background: #c3433133;
+      border-radius: 30px;
+      padding: 5px;
+      color: #c34331;
+      font-size: 38px;
+      margin: 20px 0;
+    }
+  }
+
+  .ant-modal-footer {
+    border: none;
+  }
+}
+
+.modal-full {
+  margin: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  .ant-modal, .ant-modal-content {
+    max-height: unset !important;
+    height: 100vh;
+    max-width: unset !important;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+  }
+   
+  .ant-modal-body {
+    height: calc(100vh - 110px);
+  }
+}
+
+.centered-content {
+  align-items: center;
+  justify-content: center;
+  padding-top: 30vh;
+}

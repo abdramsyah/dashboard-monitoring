@@ -1,0 +1,1 @@
+{"buildTargets":[".SILENT","build-http","docker-down","docker-up","fmt","help","migration-create","migration-down","migration-up","rename-project","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

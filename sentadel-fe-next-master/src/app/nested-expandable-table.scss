@@ -1,0 +1,9 @@
+.grade-table {
+  width: 100%;
+
+  .ant-table-tbody>tr>td,
+  .ant-table-thead>tr>th {
+    padding: 8px;
+    text-align: center;
+  }
+}

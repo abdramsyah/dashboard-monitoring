@@ -1,0 +1,1 @@
+DROP TYPE print_type_enum;

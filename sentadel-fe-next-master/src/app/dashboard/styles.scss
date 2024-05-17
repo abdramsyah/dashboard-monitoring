@@ -1,0 +1,234 @@
+.dashboard {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .btn-add {
+      border-radius: 8px;
+      font-weight: 700;
+    }
+  }
+
+  .ant-table-thead .ant-table-cell {
+    background: #F6F8FB;
+  }
+
+  .card-heading {
+    height: 100px;
+    background: #FFFFFF;
+    margin: 20px 0;
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+    border-radius: 8px;
+
+    .title {
+      h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        color: #0B2250;
+
+        &::first-line {
+          text-transform: capitalize;
+        }
+
+        display: flex;
+        gap:10px;
+        align-items: center;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #6D7A96;
+      }
+    }
+
+    .row {
+      button {
+        background: #18A0FB;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+
+      }
+    }
+  }
+
+  .card-box {
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06) !important;
+    border-radius: 10px !important;
+    margin: 0 0 20px 0;
+
+    .title {
+      h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        color: #0B2250;
+
+        &::first-line {
+          text-transform: capitalize;
+        }
+
+        display: flex;
+        gap:10px;
+        align-items: center;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #6D7A96;
+      }
+    }
+
+    .sales {
+      h3 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        color: #18A0FB;
+
+      }
+
+      P {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #6D7A96;
+      }
+    }
+
+    .row {
+      button {
+        background: #18A0FB;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+
+      }
+    }
+
+
+  }
+}
+
+.reporting {
+  display: flex;
+  gap: 20px;
+
+  .row-7 {
+    width: 70%;
+
+    .line-chart {
+      .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .total {
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+            color: #6D7A96;
+          }
+
+          h3 {
+            font-family: 'Helvetica';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            color: #18A0FB;
+            margin-bottom: 20px;
+          }
+        }
+
+        .filter {
+          .ant-picker {
+            border: 1px solid #E2E4EA;
+            border-radius: 8px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    .bar-chart {
+      .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .total {
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6D7A96;
+          }
+
+          h3 {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 19px;
+            color: #0B2250;
+
+          }
+        }
+
+        .filter {
+          .ant-picker {
+            border: 1px solid #E2E4EA;
+            border-radius: 8px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .row-3 {
+    width: 30%;
+  }
+}
+
+.badge {
+  color: #307656;
+  background-color: #EDFDF5;
+  border-radius: 20px;
+}
+
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}

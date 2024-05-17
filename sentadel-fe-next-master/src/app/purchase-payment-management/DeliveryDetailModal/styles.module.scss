@@ -1,0 +1,157 @@
+.deliveryContainer {
+  padding: 12px 20px;
+
+  .kopTitle {
+    border-bottom: 2px solid #ddd;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .params {
+      padding: 5px 0px;
+      width: 45%;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 16px;
+
+      .rowParam {
+        display: flex;
+        flex-direction: row;
+
+        .title {
+          width: 40%;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .tableWrapper {
+    height: 65vh;
+    border-top-left-radius: 10px;
+    overflow: auto;
+
+    .tableQueue {
+      width: 100%;
+      border-collapse: collapse;
+  
+      thead tr th {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+  
+      .evenRow {
+        background-color: #f0f0f0;
+      }
+  
+      .selectedRow {
+        background-color: #66bd56;
+      }
+  
+      th {
+        background-color: #6796f7;
+        box-shadow: 0px 0px 0 2px #e8e8e8;
+        color: #fff;
+        padding: 5px 8px;
+      }
+  
+      .thNo {
+        width: 40px;
+      }
+      .thSeri {
+        width: 65px;
+      }
+      .thFarmer {
+        width: 100px;
+      }
+      .thProductType {
+        width: 70px;
+      }
+      .thGrade {
+        width: 80px;
+      }
+      .thPrice {
+        width: 60px;
+      }
+      .thBK {
+        width: 40px;
+      }
+      .thStatus {
+        width: 60px;
+      }
+      .thInvoice {
+        width: 60px;
+      }
+      .thAction {
+        width: 100px;
+      }
+
+      .tdNo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .invoiceStatusContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        row-gap: 5px;
+        flex-wrap: wrap;
+        color: #fff;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 5px;
+
+        .invoiceStatus {
+          position: relative;
+
+          .chip {
+            border-radius: 10px;
+            padding: 3px 10px;
+            display: inline;
+          }
+  
+          .hide {
+            display: none;
+            color: #000;
+            position: absolute;
+            font-size: 10px;
+            z-index: 10;
+            background: #fff;
+            border-radius: 10px;
+            padding: 2px 4px;
+            box-shadow: 2px 0px 4px 1px #ddd;
+            text-align: center;
+          }
+  
+          .chip:hover + .hide {
+            display: block;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  
+    .tableQueue td {
+      border: 1px solid #ddd;
+      padding: 4px 2px;
+    }
+  
+    .tableQueue th {
+      border: 1px solid #ddd;
+    }
+  }
+}
+
+.modalView {
+  border: 1px solid rgb(221, 221, 221);
+}

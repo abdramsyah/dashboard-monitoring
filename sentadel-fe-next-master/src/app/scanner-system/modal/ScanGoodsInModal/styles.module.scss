@@ -1,0 +1,129 @@
+@import '../../../media-queries.scss';
+
+$max-screen: (
+  xs: #{$screen-xs-max},
+  sm: #{$screen-sm-max},
+  md: #{$screen-md-max},
+);
+
+$min-screen: (
+  xs: 0px,
+  sm: #{$screen-sm-min},
+  md: #{$screen-md-min},
+);
+
+@mixin media($keys...) {
+  @each $key in $keys { 
+    @media screen and (min-width: map-get($min-screen, $key)) and (max-width: map-get($max-screen, $key)) {
+      @content;
+    }
+  }
+}
+
+.modalFull {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.halfCamera {
+  max-width: 500px;
+  height: 100%;
+}
+
+.onScanContainer {
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+@include media(xs, sm) {
+  .modalFull {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+
+  .halfCamera {
+    max-width: 100%;
+    height: 50%;
+  }
+
+  .onScanContainer {
+    padding: 0px;
+    padding-top: 30px;
+    width: 100%;
+
+    .barcodeListContainer {
+      display: flex;
+      flex-direction: column;
+      overflow: scroll;
+      height: 200px;
+      width: 100%;
+      padding: 0px 5px;
+      gap: 10px;
+  
+      .barcodeCard {
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        border-top: 2px dashed #bbb;
+        padding-top: 10px;
+  
+        .barcode {
+          flex: 2;
+          font-size: 12px;
+          font-weight: 600;
+        }
+  
+        .message {
+          flex: 2;
+          font-size: 14px;
+          font-weight: 500;
+        }
+  
+        .status {
+          // flex: 2;
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.selectionCard {
+  padding: 18px 28px;
+  background-color: rgba(23, 34, 77, 0.9);
+  border-radius: 20px;
+
+  div {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.sectionTouchable {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sectionTouchable:hover {
+  background-color: rgba(23, 34, 77, 0.7);    
+}

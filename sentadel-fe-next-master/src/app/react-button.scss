@@ -1,0 +1,51 @@
+@mixin react-button-base {
+  border-radius: 12px;
+  border: 0px solid transparent;
+  padding: 8px 12px;
+  color: #ffffff;
+  font-weight: 600;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+  min-height: 36px;
+}
+
+.react-button-pointer-disabled {
+  cursor: not-allowed !important; 
+}
+
+.react-button-blue {
+  @include react-button-base;
+  background-color: #5f9ff4;
+}
+
+.react-button-red {
+  @include react-button-base;
+  background-color: #F44336;
+}
+
+.react-button-solid-disabled {
+  @include react-button-base;
+  background-color: #ddd;
+  color: #aaa;
+}
+
+.react-button-red-outlined {
+  @include react-button-base;
+  border: 1px solid #c34331;
+  background-color: #fff;
+  color: #c34331
+}
+
+.react-button-outlined-disabled {
+  @include react-button-base;
+  border: 1px solid #aaa;
+  background-color: #ddd;
+  color: #aaa;
+}

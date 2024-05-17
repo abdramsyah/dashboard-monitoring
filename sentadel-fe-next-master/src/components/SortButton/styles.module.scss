@@ -1,0 +1,29 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .sortByButton {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E2E4EA;
+    padding: 0px 12px;
+    border-radius: 8px;
+    color: #6D7A96;
+    cursor: pointer;
+    justify-content: space-between;
+    background-color: #FFF;
+    width: 200px;
+    min-height: 32px;
+  
+    .icon {
+      margin-left: 10px;
+    }
+  }
+}

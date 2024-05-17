@@ -1,0 +1,42 @@
+.queueProcessModal {
+  border-top: 2px solid #eee;
+  margin-top: 20px;
+  padding: 20px 20px 0px;
+
+  .datePicker {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 15px 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .queueCardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      flex: 1;
+      padding: 5px 10px;
+      text-align: left;
+    }
+
+    .totalTitle {
+      flex: 2;
+      padding: 5px 10px;
+      margin-right: 20px;
+      text-align: left;
+    }
+  }
+
+  .queueCardHeader {
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    background-color: #eee;
+  }
+
+  .queueCardRowEven {
+    background-color: #f3f3f3;
+  }
+}

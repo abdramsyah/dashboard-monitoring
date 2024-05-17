@@ -1,0 +1,267 @@
+@page {
+  size: 148mm 210mm;
+  padding: 0mm; 
+  margin: 0mm; 
+}
+
+@media print {
+   .goodsThead {display: table-header-group;} 
+}
+
+.deliveryContainer {
+  margin: 2mm;
+
+  .kopContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #eee;
+    padding: 0mm 5mm; 
+    padding-top: 25mm;
+
+    .imageKop {
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: 100%;
+      height: 25mm;
+    }
+
+    .kopTitle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 12px;
+
+      .title {
+        font-size: 24px;
+        font-weight: 700;
+
+        .invoiceNumber {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      .date {
+        font-style: italic;
+      }
+    }
+
+    .params {
+      padding: 5px 0px;
+      width: 100%;
+      gap: 5px;
+      font-size: 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .title {
+        font-weight: 600;
+        text-align: left;
+      }
+    }
+  }
+
+  .pageHeaderSpace {
+    height: 45mm;
+  }
+
+  .tableWrapper {
+    border-top-left-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0mm 1.8mm;
+
+    .tableQueue {
+      width: 140mm;
+      border-collapse: collapse;
+      // margin-bottom: 2mm;
+  
+      .evenRow {
+        background-color: #f0f0f0;
+      }
+  
+      th {
+        background-color: #6796f7;
+        color: #fff;
+        padding: 5px 8px;
+      }
+  
+      .thNo {
+        width: 40px;
+      }
+      .thSeri {
+        width: 65px;
+      }
+      .thFarmer {
+        width: 100px;
+      }
+      .thProductType {
+        width: 70px;
+      }
+      .thGrade {
+        width: 80px;
+      }
+      .thPrice {
+        width: 60px;
+      }
+      .thBK {
+        width: 40px;
+      }
+      .thStatus {
+        width: 60px;
+      }
+      .thInvoice {
+        width: 60px;
+      }
+      .thAction {
+        width: 100px;
+      }
+
+      .tdNo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  
+    .tableQueue td {
+      border: 1px solid #ddd;
+      padding: 2.5px 2px;
+      font-size: 12px;
+    }
+  
+    .tableQueue th {
+      font-size: 12px;
+    }
+
+    .tableQueue tr {
+      page-break-inside: avoid;
+    }
+  }
+
+  .footerWrapper {
+    page-break-inside: avoid;
+    width: 100%;
+    padding: 0mm 1.2mm;
+
+    .invoiceRpaymentTitle {
+      text-align: start;
+      margin-top: 10px;
+      font-style: italic;
+      font-weight: 600;
+    }
+    
+    .invoiceRpaymentContainer {
+      margin: 0px 0px 10px 0px;
+    }
+    
+    .invoiceRepaymentRow {
+      width: 140mm;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      text-align: start;
+      // padding-right: 20px;
+    }
+    
+    .receivedValueContainer {
+      width: 140mm;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      text-align: start;
+      // padding-right: 20px;
+      margin: 20px 0px;
+      font-size: 16px;
+    }
+    
+    .taxAndFeeContainer {
+      width: 140mm;
+      margin: 10px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    
+    .horizontalLine {
+      height: 1px;
+      background: #626568;
+      opacity: 15%;
+      width: 100%;
+    }
+
+    .footTotalContainer {
+      width: 140mm;
+      display: flex;
+      flex-direction: row;
+      page-break-inside: avoid;
+
+      .footTitle {
+        flex: auto;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+
+  .copyBackground {
+    background:url('../../assets/copy.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+  }
+
+  .ttdArea{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    page-break-inside: avoid;
+
+    h3{
+      margin-top:10px;
+    }
+    
+    .signatureCover {
+      font-size: 40px;
+    }
+  }
+}
+
+.isCopy {
+  page-break-before: always;
+  page-break-inside: auto;
+}
+
+.flex15 {
+  flex: 1.5
+}
+
+.flex2 {
+  flex: 2
+}
+
+.textAlignEnd {
+  text-align: end;
+}
+
+.textWeight600 {
+  font-weight: 600;
+}
+
+.textWeight700 {
+  font-weight: 700;
+}
+
+.invoiceDetail {
+  border: 1px solid rgb(221, 221, 221);
+  flex: 2
+}
+

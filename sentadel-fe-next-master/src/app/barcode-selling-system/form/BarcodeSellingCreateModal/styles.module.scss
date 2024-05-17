@@ -1,0 +1,44 @@
+@page {
+  size: 200mm 137mm;
+  margin: 2mm 0mm;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .labelCard {
+    width: 63.8mm;
+    height: 31.8mm;
+    border: 0.1mm solid #bbb;
+    border-radius: 3mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+
+    .barcodeSection {
+      position: relative;
+      padding-top: 5px;
+      align-items: center;
+    }
+  }
+}
+
+.modalView {
+  margin: 10mm 2mm 2mm;
+  gap: 5mm;
+  row-gap: 5mm;
+  justify-content: center;
+  overflow-y: scroll;
+  max-height: 600px;
+}
+
+.printView {
+  padding: 0mm 1.5mm;
+  gap: 2.1mm;
+  row-gap: 1.57mm;
+  justify-content: flex-start;
+}

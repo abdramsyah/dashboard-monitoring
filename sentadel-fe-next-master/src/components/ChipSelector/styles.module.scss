@@ -1,0 +1,31 @@
+.chipSelector {
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  .container {
+    position: relative;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+
+    .title {
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      background-color: #fff;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 16px;
+    }
+
+    .selectorArea {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      row-gap: 10px;
+    }
+  }
+}

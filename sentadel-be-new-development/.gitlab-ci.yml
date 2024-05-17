@@ -1,0 +1,16 @@
+stages:
+  - development_deploy
+
+variables:
+  APP_NAME: "sentadel-api"
+  TAG: "latest"
+
+development_deploy:
+  stage: development_deploy
+  tags:
+    - sentadel-api
+  only:
+    - development
+  script:
+    - docker-compose build
+    - docker-compose up -d --force-recreate

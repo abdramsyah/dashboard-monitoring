@@ -1,0 +1,1 @@
+DROP TYPE goods_status_enum;

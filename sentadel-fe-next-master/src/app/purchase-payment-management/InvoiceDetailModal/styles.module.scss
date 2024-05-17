@@ -1,0 +1,237 @@
+.deliveryContainer {
+  padding: 12px 20px;
+
+  .kopTitle {
+    border-bottom: 2px solid #ddd;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .params {
+      padding: 5px 0px;
+      width: 45%;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 16px;
+
+      .rowParam {
+        display: flex;
+        flex-direction: row;
+
+        .title {
+          width: 40%;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .tableWrapper {
+    height: 65vh;
+    border-top-left-radius: 10px;
+    overflow: auto;
+
+    .tableQueue {
+      width: 100%;
+      border-collapse: collapse;
+  
+      thead tr th {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+  
+      .evenRow {
+        background-color: #f0f0f0;
+      }
+  
+      .selectedRow {
+        background-color: #66bd56;
+      }
+  
+      th {
+        background-color: #6796f7;
+        box-shadow: 0px 0px 0 2px #e8e8e8;
+        color: #fff;
+        padding: 5px 8px;
+      }
+  
+      .thNo {
+        width: 40px;
+      }
+      .thSeri {
+        width: 65px;
+      }
+      .thFarmer {
+        width: 100px;
+      }
+      .thProductType {
+        width: 70px;
+      }
+      .thGrade {
+        width: 80px;
+      }
+      .thPrice {
+        width: 60px;
+      }
+      .thBK {
+        width: 40px;
+      }
+      .thStatus {
+        width: 60px;
+      }
+      .thInvoice {
+        width: 60px;
+      }
+      .thAction {
+        width: 100px;
+      }
+
+      .tdNo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .footTitle {
+        font-weight: 700;
+        background-color: #6796f7;
+        color: #fff
+      }
+
+      .footTotal {
+        font-weight: 700;
+      }
+    }
+  
+    .tableQueue td {
+      border: 1px solid #ddd;
+      padding: 4px 2px;
+    }
+  
+    .tableQueue th {
+      border: 1px solid #ddd;
+    }
+  }
+}
+
+.invoiceRpaymentTitle {
+  text-align: start;
+  margin-top: 30px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.invoiceRpaymentContainer {
+  margin: 0px 0px 20px 0px;
+}
+
+.invoiceRepaymentRow {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: start;
+  padding-right: 20px;
+}
+
+.receivedValueContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: start;
+  padding-right: 20px;
+  margin: 20px 0px;
+  font-size: 16px;
+}
+
+.invoiceRepaymentManagement {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  .repaymentControl {
+    border: 1px solid rgb(221, 221, 221);
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .buttonWrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      row-gap: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .paramsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .inputRow {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .repaymentListHeader {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      text-align: start;
+      font-weight: 700;
+    }
+
+    .repaymentListRow {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      text-align: start;
+    }
+  }
+}
+
+.taxAndFeeContainer {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.horizontalLine {
+  height: 1px;
+  background: #626568;
+  opacity: 15%;
+  width: 100%;
+}
+
+.flex15 {
+  flex: 1.5
+}
+
+.flex2 {
+  flex: 2
+}
+
+.textAlignEnd {
+  text-align: end;
+}
+
+.textWeight600 {
+  font-weight: 600;
+}
+
+.invoiceDetail {
+  border: 1px solid rgb(221, 221, 221);
+  flex: 2
+}

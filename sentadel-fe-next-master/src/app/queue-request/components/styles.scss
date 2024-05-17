@@ -1,0 +1,69 @@
+@import '../../../components/Layout/media-queries';
+
+.card-mobile-view {
+    display: none;
+
+    @include lt-md {
+        display: block;
+        margin: 20px 0;
+        border-radius: 8px 8px 8px 8px;
+        background: #FFF;
+
+        .ant-card-head {
+            background: #F2F3F6;
+
+        }
+
+        p {
+            color: #6D7A96;
+            font-family: Helvetica;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.12px;
+        }
+
+        h5{
+            color: #0B2250;
+            font-family: Helvetica;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.12px;
+        }
+
+        .on-progress {
+            color: #18A0FB;
+            padding: 5px 10px;
+            background: #F1F9FF;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: 700;
+            border: none;
+        }
+
+        .approved {
+            color: #307656;
+            padding: 5px 10px;
+            background: #EDFDF5;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: 700;
+            border: none;
+
+        }
+
+        .another-status {
+            color: #f5222d;
+            padding: 5px 10px;
+            background: #ffccc7;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: 700;
+            border: none;
+
+        }
+    }
+}

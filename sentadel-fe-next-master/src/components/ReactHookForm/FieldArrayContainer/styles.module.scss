@@ -1,0 +1,26 @@
+.fieldArrayContainer {
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px;
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .horizontalLine {
+    margin: 8px 0px;
+    height: 1px;
+    background-color: #ddd;
+  }
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

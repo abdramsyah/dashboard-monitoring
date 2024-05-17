@@ -1,0 +1,75 @@
+.client-management {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .btn-add {
+      border-radius: 8px;
+      font-weight: 700;
+    }
+  }
+
+
+
+  .card-box {
+    box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06) !important;
+    border-radius: 10px !important;
+
+    .filter-search {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+
+      .input-search {
+        border-radius: 4px !important;
+        width: 300px;
+      }
+
+      .sortByButton {
+        display: flex;
+        align-items: center;
+        border: 1px solid #E2E4EA;
+        padding: 12px;
+        border-radius: 8px;
+        color: #6D7A96;
+        cursor: pointer;
+
+        .icon {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.badge {
+  color: #307656;
+  background-color: #EDFDF5;
+  border-radius: 20px;
+}
+
+.select-goods {
+  background: #FFFFFF;
+  border: 1px solid #E2E4EA;
+  border-radius: 8px;
+
+}
+
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-select {
+  .ant-select-selection-search-input {
+    border-radius: 8px !important;
+  }
+}

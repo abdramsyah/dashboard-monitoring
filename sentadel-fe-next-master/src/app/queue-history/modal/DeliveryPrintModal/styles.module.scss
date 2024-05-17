@@ -1,0 +1,89 @@
+@page {
+  size: 210mm 297mm;
+  margin: 15mm 5mm;
+}
+
+.deliveryContainer {
+  padding: 12px 20px;
+
+  .kopTitle {
+    border-bottom: 2px solid #ddd;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .params {
+      padding: 5px 0px;
+      width: 55%;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 20px;
+
+      .rowParam {
+        display: flex;
+        flex-direction: row;
+
+        .title {
+          width: 55%;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .tableQueue {
+    width: 100%;
+    border-collapse: collapse;
+
+    .thead {
+      height: 30px;
+
+      .thNo {
+        width: 10px;
+      }
+      .thSeri {
+        width: 80px;
+      }
+      .thFarmer {
+        width: 120px;
+      }
+      .thProductType {
+        width: 60px;
+      }
+      .thStatus {
+        width: 50px;
+      }
+      .thInvoice {
+        width: 50px;
+      }
+      .thDesc {
+        width: 30px;
+      }
+    } 
+
+  }
+
+  .tableQueue td {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  .tableQueue th {
+    border: 1px solid #ddd;
+  }
+}
+
+.modalView {
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.printView {
+  padding: 0mm 1.5mm;
+  text-align: center;
+}

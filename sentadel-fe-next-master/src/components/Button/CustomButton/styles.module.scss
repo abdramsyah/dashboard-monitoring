@@ -1,0 +1,23 @@
+.badge-container {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  top: -10px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #c34331;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.badgeNumber {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  width: min-content;
+}
+.container {
+  position: relative;
+}

@@ -1,0 +1,269 @@
+.deliveryContainer {
+  padding: 8px 12px;
+
+  .kopTitle {
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: '#f00';
+
+    .params {
+      padding: 5px 0px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 5px;
+      font-size: 13px;
+      font-weight: 700;
+      height: 70px;
+
+      .rowParam {
+        width: 280px;
+        display: flex;
+        flex-direction: row;
+
+        .title {
+          width: 50%;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .tableContainer {
+    display: flex;
+    gap: 20px;
+
+    .groupingTableWrapper {
+      flex: 5.5;
+      height: 65vh;
+      border-top-left-radius: 10px;
+      overflow: auto;
+      font-size: 12px;
+      font-weight: 12px;
+  
+      .tableQueue {
+        width: 100%;
+        border-collapse: collapse;
+    
+        thead tr th {
+          position: sticky;
+          top: 0;
+          z-index: 10;
+        }
+    
+        .evenRow {
+          background-color: #f0f0f0;
+        }
+    
+        .selectedGoods {
+          background-color: #A5D6A7;
+        }
+    
+        .selectedGrouping {
+          background-color: #EF9A9A;
+        }
+    
+        .gradeChanged {
+          background-color: #90CAF9;
+        }
+    
+        th {
+          background-color: #6796f7;
+          box-shadow: 0px 0px 0 2px #e8e8e8;
+          color: #fff;
+          padding: 5px 8px;
+        }
+    
+        .thNo {
+          width: 40px;
+        }
+        .thSeri {
+          width: 55px;
+        }
+        .thFarmer {
+          width: 80px;
+        }
+        .thProductType {
+          width: 60px;
+        }
+        .thGrade {
+          width: 30px;
+        }
+        .thPrice {
+          width: 50px;
+        }
+        .thBK {
+          width: 40px;
+        }
+        .thStatus {
+          width: 60px;
+        }
+        .thInvoice {
+          width: 60px;
+        }
+        .thAction {
+          width: 100px;
+        }
+  
+        .tdNo {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 10px;
+        }
+  
+        // .invoiceStatusContainer {
+        //   display: flex;
+        //   flex-direction: row;
+        //   gap: 5px;
+        //   row-gap: 5px;
+        //   flex-wrap: wrap;
+        //   color: #fff;
+        //   font-weight: 600;
+        //   font-size: 12px;
+        //   padding: 5px;
+  
+        //   .invoiceStatus {
+        //     position: relative;
+  
+        //     .chip {
+        //       border-radius: 10px;
+        //       padding: 3px 10px;
+        //       display: inline;
+        //     }
+    
+        //     .hide {
+        //       display: none;
+        //       color: #000;
+        //       position: absolute;
+        //       font-size: 10px;
+        //       z-index: 10;
+        //       background: #fff;
+        //       border-radius: 10px;
+        //       padding: 2px 4px;
+        //       box-shadow: 2px 0px 4px 1px #ddd;
+        //       text-align: center;
+        //     }
+    
+        //     .chip:hover + .hide {
+        //       display: block;
+        //       cursor: pointer;
+        //     }
+        //   }
+        // }
+      }
+    
+      .tableQueue td {
+        border: 1px solid #ddd;
+        padding: 4px 2px;
+      }
+    
+      .tableQueue th {
+        border: 1px solid #ddd;
+      }
+    }
+
+    .goodsTableWrapper {
+      flex: 4;
+      height: 65vh;
+      font-size: 12px;
+      font-weight: 12px;
+  
+      .tableWrapper {
+        border-top-left-radius: 10px;
+        overflow: auto;
+
+        .tableQueue {
+          width: 100%;
+          border-collapse: collapse;
+      
+          thead tr th {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+          }
+      
+          .evenRow {
+            background-color: #f0f0f0;
+          }
+      
+          .selectedGoods {
+            background-color: #A5D6A7;
+          }
+      
+          .selectedGrouping {
+            background-color: #EF9A9A;
+          }
+      
+          th {
+            background-color: #6796f7;
+            box-shadow: 0px 0px 0 2px #e8e8e8;
+            color: #fff;
+            padding: 5px 8px;
+          }
+      
+          .thNo {
+            width: 40px;
+          }
+          .thSeri {
+            width: 55px;
+          }
+          .thFarmer {
+            width: 80px;
+          }
+          .thProductType {
+            width: 60px;
+          }
+          .thGrade {
+            width: 30px;
+          }
+          .thPrice {
+            width: 50px;
+          }
+          .thBK {
+            width: 40px;
+          }
+          .thStatus {
+            width: 60px;
+          }
+          .thInvoice {
+            width: 60px;
+          }
+          .thAction {
+            width: 100px;
+          }
+    
+          .tdNo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+          }
+        }
+      
+        .tableQueue td {
+          border: 1px solid #ddd;
+          padding: 4px 2px;
+        }
+      
+        .tableQueue th {
+          border: 1px solid #ddd;
+        }
+      }
+    }
+  }
+}
+
+.modalView {
+  border: 1px solid rgb(221, 221, 221);
+}

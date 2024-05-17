@@ -1,0 +1,52 @@
+@mixin chip-base {
+  display: inline-block;
+  font-weight: 700;
+  padding: 7px 12px;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.chip-block {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.chip-touchable {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.chip-green-outlined {
+  @include chip-base();
+  background-color: #F1F9FF;
+  color: #307656;
+  border: 1px solid #307656;
+}
+
+.chip-red-outlined {
+  @include chip-base();
+  background-color: #F1F9FF;
+  color: #F5222D;
+  border: 1px solid #F5222D;
+}
+
+.chip-blue-outlined {
+  @include chip-base();
+  background-color: #F1F9FF;
+  color: #18A0FB;
+  border: 1px solid #18A0FB;
+}
+
+.chip-green-solid {
+  @include chip-base();
+  background-color: #307656;
+  color: #F1F9FF;
+}

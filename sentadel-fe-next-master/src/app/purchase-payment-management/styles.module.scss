@@ -1,0 +1,48 @@
+.invoiceListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 5px;
+
+  .invoiceInformation {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+    .invoiceNumber:hover {
+      cursor: pointer;
+    }
+
+    .invoiceStatus {
+      position: relative;
+      color: #fff;
+  
+      .chip {
+        border-radius: 10px;
+        padding: 3px 10px;
+        display: inline;
+      }
+  
+      .hide {
+        display: none;
+        color: #000;
+        position: absolute;
+        font-size: 10px;
+        z-index: 10;
+        background: #fff;
+        border-radius: 10px;
+        padding: 2px 4px;
+        box-shadow: 2px 0px 4px 1px #ddd;
+        text-align: center;
+      }
+  
+      .chip:hover + .hide {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}

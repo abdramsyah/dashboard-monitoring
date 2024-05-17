@@ -1,0 +1,34 @@
+.scanSelectionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 35px;
+
+  .selectionCard {
+    padding: 18px 28px;
+    background-color: rgba(23, 34, 77, 0.9);
+    border-radius: 20px;
+
+    div {
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  .sectionTouchable {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .sectionTouchable:hover {
+    background-color: rgba(23, 34, 77, 0.7);    
+  }
+}

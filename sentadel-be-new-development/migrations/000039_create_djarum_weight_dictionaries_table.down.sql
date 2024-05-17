@@ -1,0 +1,1 @@
+DROP TABLE djarum_weight_dictionaries;
